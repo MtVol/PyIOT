@@ -28,10 +28,11 @@ def crop_prediction(data: PatienData):
 
     if data.model == 1:
         prediction = SVM_model2.predict(xin)
-        print("predicction: ",prediction)
+        print("predicction: ",prediction,data.model)
     else:
         prediction = RF_model2.predict(xin)
-        print("predicction: ",prediction)
+        print("predicction: ",prediction,data.model)
+
 
     return prediction[0]
 
