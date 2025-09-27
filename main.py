@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import diabetes_router
+from routers import Crop_recommendation
 
 
 
 app = FastAPI()
-app.include_router(diabetes_router.router)
+app.include_router(Crop_recommendation.router)
 
 
 origins = ["*"]
