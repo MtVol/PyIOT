@@ -23,7 +23,7 @@ def diabetes_prediction(data: PatienData):
     ]).reshape(1,8)
     
     prediction = RF_model2.predict(xin)
-    print("prediction ",prediction)
+    print("predicction: ",prediction)
 
     return labels[prediction[0]]
 
